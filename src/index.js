@@ -1,5 +1,6 @@
 const Home = require('./Home');
 const Menu = require('./Menu');
+const Contact = require('./Contact');
 
 const Index = (() => {
     const content = document.getElementById('content');
@@ -29,7 +30,7 @@ const Index = (() => {
             contactBtn.classList.add('active');
 
             clearContent();
-            // Render Contact section
+            Contact.render();
         })
     };
     function clearActiveClass(){
@@ -46,7 +47,7 @@ const Index = (() => {
     return {
         init: () => {
             addEventListeners();
-            Home.render();
+            Contact.render();
         },
     };
 })();
