@@ -6,10 +6,10 @@ function Menu(){
     const menuItems = [
         { name: 'Default Glizzy', img_path: './images/default_glizzy.jpg', description: 'Just a regular glizzy. Top as desired.', price: '5.00' },
         { name: 'Shrimp Glizzy', img_path: './images/shrimp_glizzy.jpg', description: 'Glizzy straight from the ocean.', price: '10.25' },
-        { name: 'Banana Glizzy', img_path: './images/banana_glizzy.jpg', description: 'Glizzy for the healthy ones out there', price: '6.75' },
-        { name: 'Bacon Wrapped Glizzy', img_path: './images/bacon_wrapped_glizzy.jpg', description: 'Glizzy wrapped in bacon. Top as desired', price: '12.50' },
-        { name: 'Ramen Glizzy', img_path: './images/ramen_glizzy.jpg', description: 'Glizzy with an international touch', price: '7.00' },
-        { name: 'Taco Glizzy', img_path: './images/taco_glizzy.jpg', description: 'Spanish twist on the glizzy', price: '10.00' },
+        { name: 'Banana Glizzy', img_path: './images/banana_glizzy.jpg', description: 'Glizzy for the healthy ones out there.', price: '6.75' },
+        { name: 'Bacon Wrapped Glizzy', img_path: './images/bacon_wrapped_glizzy.jpg', description: 'Glizzy wrapped in bacon. Top as desired.', price: '12.50' },
+        { name: 'Ramen Glizzy', img_path: './images/ramen_glizzy.jpg', description: 'Glizzy with an international touch.', price: '7.00' },
+        { name: 'Taco Glizzy', img_path: './images/taco_glizzy.jpg', description: 'Spanish twist on the glizzy.', price: '10.00' },
     ];
 
     function createHeader(){
