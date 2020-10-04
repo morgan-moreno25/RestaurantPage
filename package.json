@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Example site for a restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morgan Moreno",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
