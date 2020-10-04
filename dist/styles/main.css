@@ -1,5 +1,7 @@
 :root {
     --dark: #0b403c;
+    --light: #bffffa;
+    --grey: #2d2e2e;
 }
 
 html {
@@ -13,7 +15,7 @@ html {
 }
 #app {
     display: grid;
-    grid-template-rows: 100vh 100vh;
+    grid-template-rows: 100vh minmax(100vh, auto);
     grid-template-areas:
         "hero"
         "content";
@@ -48,6 +50,14 @@ html {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    box-shadow: 0 0 5px var(--light);
+    border: 1px solid black;
+}
+#content {
+    background: white;
+    padding: 50px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px var(--light);
 }
 
 
@@ -56,9 +66,60 @@ html {
     width: 100%;
     font-size: 1.6rem;
     font-weight: bold;
+    background: var(--light);
 }
 .active {
     background: black;
     color: white;
     text-decoration: underline;
+}
+.home > p {
+    font-size: 2rem;
+}
+
+.menu, .home, .contact {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.section-header {
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 2px solid var(--dark);
+    margin-bottom: 20px;
+}
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 20px;
+}
+.card {
+    background: var(--grey);
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5%;
+    color: white;
+}
+.card--img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+.card--content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.card--title {
+    font-size: 2rem;
+}
+.card--description, .card--price {
+    font-size: 1.4rem;
 }
