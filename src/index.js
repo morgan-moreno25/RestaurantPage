@@ -47,7 +47,7 @@ const Index = (() => {
     return {
         init: () => {
             addEventListeners();
-            Contact.render();
+            Home.render();
         },
     };
 })();
